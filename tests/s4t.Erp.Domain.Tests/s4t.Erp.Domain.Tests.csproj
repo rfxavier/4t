@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\xunit.runner.visualstudio.2.3.1\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\..\packages\xunit.runner.visualstudio.2.3.1\build\net20\xunit.runner.visualstudio.props')" />
+  <Import Project="..\..\packages\xunit.core.2.3.1\build\xunit.core.props" Condition="Exists('..\..\packages\xunit.core.2.3.1\build\xunit.core.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C56F413F-4294-422A-A530-9580CD451C7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>s4t.Erp.Domain.Tests</RootNamespace>
+    <AssemblyName>s4t.Erp.Domain.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMoq, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMoq.2.0.0\lib\net45\AutoMoq.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=4.8.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Moq.4.8.1\lib\net45\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Threading.Tasks.Extensions.4.4.0\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\xunit.abstractions.2.0.1\lib\net35\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.3.1.3858, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\xunit.assert.2.3.1\lib\netstandard1.1\xunit.assert.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.3.1.3858, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\xunit.extensibility.core.2.3.1\lib\netstandard1.1\xunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.3.1.3858, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\xunit.extensibility.execution.2.3.1\lib\net452\xunit.execution.desktop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Integration\DocumentoEntradaTests.cs" />
+    <Compile Include="Integration\FazendaTests.cs" />
+    <Compile Include="Integration\TicketPesagemTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unit\Graos\Armazenagem\Dtos\LocalizacaoDtoScopesTests.cs" />
+    <Compile Include="Unit\Graos\Armazenagem\Entities\Builders\ArmazemBuilder.cs" />
+    <Compile Include="Unit\Graos\Armazenagem\Entities\Builders\LocalBuilder.cs" />
+    <Compile Include="Unit\Graos\Armazenagem\Entities\Builders\PilhaBuilder.cs" />
+    <Compile Include="Unit\Graos\Armazenagem\ValueObjects\Builders\LocalizacaoBuilder.cs" />
+    <Compile Include="Unit\Graos\Armazenagem\ValueObjects\LocalizacaoScopesTests.cs" />
+    <Compile Include="Unit\Graos\Armazenagem\ValueObjects\LocalizacaoTests.cs" />
+    <Compile Include="Unit\Graos\Balanca\Commands\Builders\AbrePesagemRegistraPrimeiroPesoCommandBuilder.cs" />
+    <Compile Include="Unit\Graos\Balanca\Commands\Builders\AbrePesagemServicoAvulsoRegistraPrimeiroPesoCommandBuilder.cs" />
+    <Compile Include="Unit\Graos\Balanca\Commands\Builders\ContinuaPesagemRegistraPesoCommandBuilder.cs" />
+    <Compile Include="Unit\Graos\Balanca\Commands\Handlers\PesagemCommandHandlerTests.cs" />
+    <Compile Include="Unit\Graos\Balanca\Entities\Builders\TicketPesagemBuilder.cs" />
+    <Compile Include="Unit\Graos\Balanca\Entities\Builders\TicketPesagemMovimentacaoBuilder.cs" />
+    <Compile Include="Unit\Graos\Balanca\Entities\TicketPesagemTests.cs" />
+    <Compile Include="Unit\Graos\Nucleo\Entities\Builders\EmbalagemBuilder.cs" />
+    <Compile Include="Unit\Graos\Nucleo\Entities\Builders\LoteBuilder.cs" />
+    <Compile Include="Unit\Graos\RecepcaoExpedicao\Commands\Builders\AbreDocumentoEntradaCommandBuilder.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Builders\GeraTicketDesembarqueParaEntradaDepositoCommandBuilder.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Builders\GeraTicketDesembarqueParaEntradaTransferenciaCommandBuilder.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Builders\GeraTicketServicoAvulsoCommandBuilder.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Handlers\GeraTicketDesembarqueParaEntradaDepositoCommandHandlerTests.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Handlers\GeraTicketDesembarqueParaEntradaTransferenciaCommandHandlerTests.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Handlers\GeraTicketServicoAvulsoCommandHandlerTests.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Handlers\RegistroDePortariaSendoCriadoEventTests.cs" />
+    <Compile Include="Unit\Graos\RecepcaoExpedicao\Commands\Handlers\AbreDocumentoEntradaCommandHandlerTests.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Inputs\GeraTicketCommandTests.cs" />
+    <Compile Include="Unit\Graos\RecepcaoExpedicao\Commands\Scopes\CommandScopesTests.cs" />
+    <Compile Include="Unit\Graos\RecepcaoExpedicao\Entities\Builders\DocumentoEntradaBuilder.cs" />
+    <Compile Include="Unit\Nucleo\Nucleo\Entities\Builders\EmpresaBuilder.cs" />
+    <Compile Include="Unit\Nucleo\Nucleo\Entities\Builders\FazendaBuilder.cs" />
+    <Compile Include="Unit\Nucleo\Nucleo\Entities\Builders\FazendaCertificacaoEmissorBuilder.cs" />
+    <Compile Include="Unit\Nucleo\Nucleo\Entities\Builders\FazendaCertificacaoMovimentacaoBuilder.cs" />
+    <Compile Include="Unit\Nucleo\Nucleo\Entities\Builders\FilialBuilder.cs" />
+    <Compile Include="Unit\Graos\Nucleo\Entities\Builders\MotoristaBuilder.cs" />
+    <Compile Include="Unit\Graos\Portaria\Entities\Builders\ProdutoPortariaBuilder.cs" />
+    <Compile Include="Unit\Graos\Portaria\Entities\Builders\RegistroDePortariaBuilder.cs" />
+    <Compile Include="Unit\Graos\Portaria\Entities\Builders\TicketPortariaBuilder.cs" />
+    <Compile Include="Unit\Graos\RecepcaoExpedicao\Entities\DocumentoEntradaTests.cs" />
+    <Compile Include="Unit\Nucleo\EnumEquivalenciaTests.cs" />
+    <Compile Include="Unit\Nucleo\Fazendas\Repositories\FazendaCertificacaoMovimentacaoRepositoryDadosTeste.cs" />
+    <Compile Include="Unit\Nucleo\Fazendas\Repositories\FazendaCertificacaoMovimentacaoRepositoryTests.cs" />
+    <Compile Include="Unit\Graos\Portaria\Commands\Scopes\GeraTicketCommandScopeTest.cs" />
+    <Compile Include="Unit\Nucleo\Nucleo\ValueObjects\PlacaScopeTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\s4t.Erp.Domain.Core\s4t.Erp.Domain.Core.csproj">
+      <Project>{be932cb0-8457-422f-bcba-bc26f8d872a6}</Project>
+      <Name>s4t.Erp.Domain.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\s4t.Erp.Domain\s4t.Erp.Domain.csproj">
+      <Project>{5d81db57-f7ce-435a-aa6b-a31d763fba8f}</Project>
+      <Name>s4t.Erp.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\s4t.Erp.Infra.Data\s4t.Erp.Infra.Data.csproj">
+      <Project>{cb06bf9b-3bf5-4723-a9e1-62482bed09e4}</Project>
+      <Name>s4t.Erp.Infra.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\xunit.core.2.3.1\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\xunit.core.2.3.1\build\xunit.core.props'))" />
+    <Error Condition="!Exists('..\..\packages\xunit.core.2.3.1\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\xunit.core.2.3.1\build\xunit.core.targets'))" />
+    <Error Condition="!Exists('..\..\packages\xunit.runner.visualstudio.2.3.1\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\xunit.runner.visualstudio.2.3.1\build\net20\xunit.runner.visualstudio.props'))" />
+  </Target>
+  <Import Project="..\..\packages\xunit.core.2.3.1\build\xunit.core.targets" Condition="Exists('..\..\packages\xunit.core.2.3.1\build\xunit.core.targets')" />
+</Project>

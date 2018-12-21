@@ -1,0 +1,11 @@
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\bin\Debug\s4t.Erp.Graos.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\bin\Debug\s4t.Erp.Graos.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\bin\Debug\s4t.Erp.Cadastros.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\bin\Debug\s4t.Erp.Core.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\bin\Debug\s4t.Erp.Cadastros.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\bin\Debug\s4t.Erp.Core.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\obj\Debug\s4t.Erp.Graos.Domain.csproj.CoreCompileInputs.cache
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\obj\Debug\s4t.Erp.Graos.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\obj\Debug\s4t.Erp.Graos.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\obj\Debug\s4t.Erp.Graos.Domain.csprojAssemblyReference.cache
+C:\sistemas\4t\src\s4t.Erp.Graos.Domain\obj\Debug\s4t.Erp.Graos.Domain.csproj.CopyComplete

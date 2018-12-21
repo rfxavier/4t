@@ -1,0 +1,6 @@
+C:\sistemas\4t\src\s4t.Erp.Core.Domain\bin\Debug\s4t.Erp.Core.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Core.Domain\bin\Debug\s4t.Erp.Core.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Core.Domain\obj\Debug\s4t.Erp.Core.Domain.csproj.CoreCompileInputs.cache
+C:\sistemas\4t\src\s4t.Erp.Core.Domain\obj\Debug\s4t.Erp.Core.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Core.Domain\obj\Debug\s4t.Erp.Core.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Core.Domain\obj\Debug\s4t.Erp.Core.Domain.csprojAssemblyReference.cache

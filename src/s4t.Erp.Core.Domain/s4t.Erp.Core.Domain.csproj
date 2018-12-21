@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2370AA0F-75B8-49D2-9D66-B75B4DA1F05A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>s4t.Erp.Core.Domain</RootNamespace>
+    <AssemblyName>s4t.Erp.Core.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\CommandResponse.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\ICommandHandler.cs" />
+    <Compile Include="Commands\ICommandResult.cs" />
+    <Compile Include="DomainNotification\AssertionConcern.cs" />
+    <Compile Include="DomainNotification\Events\Contracts\IDomainEvent.cs" />
+    <Compile Include="DomainNotification\Events\DomainEvent.cs" />
+    <Compile Include="DomainNotification\Events\DomainNotification.cs" />
+    <Compile Include="DomainNotification\Events\IDomainNotificationHandler.cs" />
+    <Compile Include="DomainNotification\Exceptions\RaiseEventException.cs" />
+    <Compile Include="DomainNotification\Handlers\DomainNotificationHandler.cs" />
+    <Compile Include="DomainNotification\IContainer.cs" />
+    <Compile Include="DomainNotification\IHandler.cs" />
+    <Compile Include="Enums\FazendaStatus.cs" />
+    <Compile Include="Enums\TipoPFPJ.cs" />
+    <Compile Include="Models\Entity.cs" />
+    <Compile Include="Models\Enumeration.cs" />
+    <Compile Include="Models\IEnumeration.cs" />
+    <Compile Include="Models\ValueObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueObjects\CEP\CEP.cs" />
+    <Compile Include="ValueObjects\CNPJ\CNPJ.cs" />
+    <Compile Include="ValueObjects\CPF\CPF.cs" />
+    <Compile Include="ValueObjects\DateTimeRange\DateTimeRange.cs" />
+    <Compile Include="ValueObjects\Email\Email.cs" />
+    <Compile Include="ValueObjects\Placa\Placa.cs" />
+    <Compile Include="ValueObjects\Placa\PlacaScopes.cs" />
+    <Compile Include="ValueObjects\Telefone\Telefone.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

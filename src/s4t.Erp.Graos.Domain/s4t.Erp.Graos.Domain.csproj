@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE428768-93AF-4A4D-A76E-8332E44A26E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>s4t.Erp.Graos.Domain</RootNamespace>
+    <AssemblyName>s4t.Erp.Graos.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Armazenagem\Commands\Handlers\BoletimCommandHandler.cs" />
+    <Compile Include="Nucleo\Interfaces\ILoteRepository.cs" />
+    <Compile Include="Armazenagem\Commands\Inputs\RegistraBoletimDocumentoEntradaCommandScopes.cs" />
+    <Compile Include="Armazenagem\Interfaces\IBoletimRepository.cs" />
+    <Compile Include="Armazenagem\Commands\Inputs\RegistraBoletimCommand.cs" />
+    <Compile Include="Armazenagem\Commands\Inputs\RegistraBoletimCommandScopes.cs" />
+    <Compile Include="Armazenagem\Commands\Inputs\RegistraBoletimDocumentoEntradaCommand.cs" />
+    <Compile Include="Armazenagem\Commands\Results\RegistraBoletimCommandResult.cs" />
+    <Compile Include="Armazenagem\Dtos\BoletimDocumentoDto.cs" />
+    <Compile Include="Armazenagem\Dtos\LocalizacaoDto.cs" />
+    <Compile Include="Armazenagem\Entities\Armazem.cs" />
+    <Compile Include="Armazenagem\Entities\Boletim.cs" />
+    <Compile Include="Armazenagem\Entities\InstrucaoServico.cs" />
+    <Compile Include="Armazenagem\Entities\OrdemCarregamento.cs" />
+    <Compile Include="Armazenagem\Entities\Transferencia.cs" />
+    <Compile Include="Armazenagem\Enums\BoletimSerie.cs" />
+    <Compile Include="Armazenagem\Entities\Local.cs" />
+    <Compile Include="Armazenagem\Entities\Pilha.cs" />
+    <Compile Include="Armazenagem\Enums\LocalizacaoTipo.cs" />
+    <Compile Include="Armazenagem\Interfaces\IArmazemRepository.cs" />
+    <Compile Include="Armazenagem\Interfaces\IEmbalagemRepository.cs" />
+    <Compile Include="Armazenagem\Interfaces\ILocalRepository.cs" />
+    <Compile Include="Armazenagem\Interfaces\IPilhaRepository.cs" />
+    <Compile Include="Armazenagem\Dtos\BoletimDocumentoDtoScopes.cs" />
+    <Compile Include="Armazenagem\Interfaces\IInstrucaoServicoRepository.cs" />
+    <Compile Include="Armazenagem\Interfaces\IOrdemCarregamentoRepository.cs" />
+    <Compile Include="Armazenagem\Interfaces\ITransferenciaRepository.cs" />
+    <Compile Include="Armazenagem\Dtos\LocalizacaoDtoScopes.cs" />
+    <Compile Include="Armazenagem\ValueObjects\BoletimDocumentoScopes.cs" />
+    <Compile Include="Armazenagem\ValueObjects\LocalizacaoScopes.cs" />
+    <Compile Include="Armazenagem\ValueObjects\BoletimDocumento.cs" />
+    <Compile Include="Armazenagem\ValueObjects\Localizacao.cs" />
+    <Compile Include="Balanca\Commands\Handlers\PesagemCommandHandler.cs" />
+    <Compile Include="Balanca\Commands\Inputs\AbrePesagemRegistraPrimeiroPesoCommand.cs" />
+    <Compile Include="Balanca\Commands\Inputs\AbrePesagemServicoAvulsoRegistraPrimeiroPesoCommand.cs" />
+    <Compile Include="Balanca\Commands\Inputs\ContinuaPesagemRegistraPesoCommand.cs" />
+    <Compile Include="Balanca\Commands\Results\PesagemCommandResult.cs" />
+    <Compile Include="Balanca\Entities\TicketPesagem.cs" />
+    <Compile Include="Balanca\Entities\TicketPesagemMovimentacao.cs" />
+    <Compile Include="Balanca\Interfaces\ITicketPesagemMovimentacaoRepository.cs" />
+    <Compile Include="Balanca\Interfaces\ITicketPesagemRepository.cs" />
+    <Compile Include="Balanca\Commands\Inputs\AbrePesagemRegistraPrimeiroPesoCommandScopes.cs" />
+    <Compile Include="Balanca\Commands\Inputs\AbrePesagemServicoAvulsoRegistraPrimeiroPesoCommandScopes.cs" />
+    <Compile Include="Balanca\Commands\Inputs\ContinuaPesagemRegistraPesoCommandScopes.cs" />
+    <Compile Include="Core\CommandHandler\CommandHandler.cs" />
+    <Compile Include="Core\Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Nucleo\Entities\Embalagem.cs" />
+    <Compile Include="Nucleo\Entities\FornecedorGraos.cs" />
+    <Compile Include="Nucleo\Entities\Lote.cs" />
+    <Compile Include="Nucleo\Entities\LoteEmbalagemNumeracao.cs" />
+    <Compile Include="Nucleo\Entities\Motorista.cs" />
+    <Compile Include="Nucleo\Entities\NotaFiscalGraos.cs" />
+    <Compile Include="Nucleo\Entities\NotaFiscalGraosCertificado.cs" />
+    <Compile Include="Nucleo\Enums\TipoGrao.cs" />
+    <Compile Include="Nucleo\Enums\TipoOperacao.cs" />
+    <Compile Include="Nucleo\Interfaces\IMotoristaRepository.cs" />
+    <Compile Include="Nucleo\Interfaces\INotaFiscalGraosRepository.cs" />
+    <Compile Include="Portaria\Commands\Handlers\GeraTicketPortariaCommandHandler.cs" />
+    <Compile Include="Portaria\Commands\Handlers\GeraTicketPortariaServicoAvulsoCommandHandler.cs" />
+    <Compile Include="Portaria\Commands\Inputs\GeraTicketPortariaCommand.cs" />
+    <Compile Include="Portaria\Commands\Inputs\GeraTicketPortariaDesembarqueParaEntradaDepositoCommand.cs" />
+    <Compile Include="Portaria\Commands\Inputs\GeraTicketPortariaDesembarqueParaEntradaTransferenciaCommand.cs" />
+    <Compile Include="Portaria\Commands\Inputs\GeraTicketPortariaNotaFiscalCommand.cs" />
+    <Compile Include="Portaria\Commands\Inputs\GeraTicketPortariaServicoAvulsoCommand.cs" />
+    <Compile Include="Portaria\Commands\Results\GeraTicketCommandResult.cs" />
+    <Compile Include="Portaria\Entities\ProdutoPortaria.cs" />
+    <Compile Include="Portaria\Entities\RegistroDePortaria.cs" />
+    <Compile Include="Portaria\Entities\RegistroDePortariaLog.cs" />
+    <Compile Include="Portaria\Entities\RegistroDePortariaServicoAvulso.cs" />
+    <Compile Include="Portaria\Entities\TicketPortaria.cs" />
+    <Compile Include="Portaria\Enums\NotaFiscalGraosTipo.cs" />
+    <Compile Include="Portaria\Enums\TipoOperacaoPortaria.cs" />
+    <Compile Include="Portaria\Enums\TipoServicoPortaria.cs" />
+    <Compile Include="Portaria\Events\RegistroDePortariaEventHandlers\IRegistroDePortariaSendoCriadoHandler.cs" />
+    <Compile Include="Portaria\Events\RegistroDePortariaEventHandlers\IRegistroDePortariaServicoAvulsoSendoCriadoHandler.cs" />
+    <Compile Include="Portaria\Events\RegistroDePortariaEventHandlers\RegistroDePortariaSendoCriadoHandlerParaCertificacoes.cs" />
+    <Compile Include="Portaria\Events\RegistroDePortariaEventHandlers\RegistroDePortariaSendoCriadoHandlerParaLog.cs" />
+    <Compile Include="Portaria\Events\RegistroDePortariaEventHandlers\RegistroDePortariaServicoAvulsoSendoCriadoHandlerParaLog.cs" />
+    <Compile Include="Portaria\Events\RegistroDePortariaEvents\RegistroDePortariaSendoCriadoEvent.cs" />
+    <Compile Include="Portaria\Events\RegistroDePortariaEvents\RegistroDePortariaServicoAvulsoSendoCriadoEvent.cs" />
+    <Compile Include="Portaria\Events\TicketGeradoEvent.cs" />
+    <Compile Include="Portaria\Interfaces\INotaFiscalRepository.cs" />
+    <Compile Include="Portaria\Interfaces\IProdutoPortariaRepository.cs" />
+    <Compile Include="Portaria\Interfaces\IRegistroDePortariaLogRepository.cs" />
+    <Compile Include="Portaria\Interfaces\IRegistroDePortariaRepository.cs" />
+    <Compile Include="Portaria\Interfaces\IRegistroDePortariaServicoAvulsoRepository.cs" />
+    <Compile Include="Portaria\Interfaces\ITicketPortariaRepository.cs" />
+    <Compile Include="Portaria\Commands\Inputs\GeraTicketPortariaCommandScope.cs" />
+    <Compile Include="Portaria\Commands\Inputs\GeraTicketPortariaServicoAvulsoCommandScope.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Handlers\DocumentoEntradaCommandHandler.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Inputs\AbreDocumentoEntradaCommand.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Inputs\ComplementaDocumentoEntradaComLotesEPesosCommand.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Inputs\ComplementaDocumentoEntradaComLotesEPesosLoteCommand.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Inputs\ComplementaDocumentoEntradaComPesosCommand.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Inputs\ComplementaDocumentoEntradaComPesosLoteCommand.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Results\AbreDocumentoEntradaCommandResult.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Results\ComplementaDocumentoEntradaCommandResult.cs" />
+    <Compile Include="RecepcaoExpedicao\Entities\DocumentoEntrada.cs" />
+    <Compile Include="RecepcaoExpedicao\Entities\DocumentoEntradaEmbalagem.cs" />
+    <Compile Include="RecepcaoExpedicao\Enums\DocumentoEntradaStatus.cs" />
+    <Compile Include="RecepcaoExpedicao\Interfaces\IDocumentoEntradaRepository.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Inputs\AbreDocumentoEntradaCommandScopes.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Inputs\ComplementaDocumentoEntradaComLotesEPesosCommandScopes.cs" />
+    <Compile Include="RecepcaoExpedicao\Commands\Inputs\ComplementaDocumentoEntradaComLotesEPesosLoteCommandScopes.cs" />
+    <Compile Include="RecepcaoExpedicao\Entities\DocumentoEntradaScopes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Nucleo\Commands\Handlers\" />
+    <Folder Include="Nucleo\Commands\Inputs\" />
+    <Folder Include="Nucleo\Commands\Results\" />
+    <Folder Include="Nucleo\Events\" />
+    <Folder Include="Nucleo\ValueObjects\" />
+    <Folder Include="Portaria\ValueObjects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\s4t.Erp.Cadastros.Domain\s4t.Erp.Cadastros.Domain.csproj">
+      <Project>{5858E776-F21A-4C62-B445-0DA55DF73CED}</Project>
+      <Name>s4t.Erp.Cadastros.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\s4t.Erp.Core.Domain\s4t.Erp.Core.Domain.csproj">
+      <Project>{2370AA0F-75B8-49D2-9D66-B75B4DA1F05A}</Project>
+      <Name>s4t.Erp.Core.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

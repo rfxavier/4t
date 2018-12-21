@@ -1,0 +1,6 @@
+C:\sistemas\4t\src\s4t.Erp.Fiscal.Infra.IoC\bin\Debug\s4t.Erp.Fiscal.Infra.IoC.dll
+C:\sistemas\4t\src\s4t.Erp.Fiscal.Infra.IoC\bin\Debug\s4t.Erp.Fiscal.Infra.IoC.pdb
+C:\sistemas\4t\src\s4t.Erp.Fiscal.Infra.IoC\obj\Debug\s4t.Erp.Fiscal.Infra.IoC.csproj.CoreCompileInputs.cache
+C:\sistemas\4t\src\s4t.Erp.Fiscal.Infra.IoC\obj\Debug\s4t.Erp.Fiscal.Infra.IoC.dll
+C:\sistemas\4t\src\s4t.Erp.Fiscal.Infra.IoC\obj\Debug\s4t.Erp.Fiscal.Infra.IoC.pdb
+C:\sistemas\4t\src\s4t.Erp.Fiscal.Infra.IoC\obj\Debug\s4t.Erp.Fiscal.Infra.IoC.csprojResolveAssemblyReference.cache

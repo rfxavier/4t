@@ -1,0 +1,9 @@
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\bin\Debug\s4t.Erp.Cadastros.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\bin\Debug\s4t.Erp.Cadastros.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\bin\Debug\s4t.Erp.Core.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\bin\Debug\s4t.Erp.Core.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\obj\Debug\s4t.Erp.Cadastros.Domain.csproj.CoreCompileInputs.cache
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\obj\Debug\s4t.Erp.Cadastros.Domain.dll
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\obj\Debug\s4t.Erp.Cadastros.Domain.pdb
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\obj\Debug\s4t.Erp.Cadastros.Domain.csprojAssemblyReference.cache
+C:\sistemas\4t\src\s4t.Erp.Cadastros.Domain\obj\Debug\s4t.Erp.Cadastros.Domain.csproj.CopyComplete
